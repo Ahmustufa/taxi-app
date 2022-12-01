@@ -5,7 +5,9 @@ import {Box, Input, HStack, Divider, Center, VStack} from 'native-base';
 import Icon from 'react-native-vector-icons/AntDesign';
 import CloseIcon from 'react-native-vector-icons/AntDesign';
 import CircleIcon from 'react-native-vector-icons/Entypo';
+import {enableLatestRenderer} from 'react-native-maps';
 
+enableLatestRenderer();
 const Home = () => {
   return (
     <>
@@ -16,7 +18,6 @@ const Home = () => {
         loadingEnabled={true}
         moveOnMarkerPress={false}
         showsMyLocationButton
-        loadingEnabled
         initialRegion={{
           latitude: 37.78825,
           longitude: -122.4324,
